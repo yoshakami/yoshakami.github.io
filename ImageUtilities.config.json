@@ -1,0 +1,62 @@
+{
+	"all": {
+		"detailsSettings": {
+			"footnote": true,
+			"tooltip": false,
+			"tooltipDelay": 0
+		},
+		"engines": {
+			"_all": true,
+			"Baidu": true,
+			"Bing": true,
+			"Google": true,
+			"ImgOps": true,
+			"IQDB": true,
+			"Reddit": true,
+			"SauceNAO": true,
+			"Sogou": true,
+			"TinEye": true,
+			"WhatAnime": true,
+			"Yandex": true
+		},
+		"general": {
+			"nsfwMode": false
+		},
+		"ownLocations": {
+			"2i ds": {
+				"enabled": true,
+				"location": "X:\\yoshi\\Pictures\\2i ds"
+			},
+			"Downloads": {
+				"enabled": true,
+				"location": "C:\\Users\\yoshi\\Downloads"
+			},
+			"meme": {
+				"enabled": true,
+				"location": "X:\\yoshi\\Pictures\\meme"
+			}
+		},
+		"places": {
+			"userAvatars": true,
+			"groupIcons": true,
+			"guildIcons": true,
+			"emojis": true
+		},
+		"rescaleSettings": {
+			"imageViewer": "WINDOW",
+			"messages": "NONE"
+		},
+		"viewerSettings": {
+			"zoomMode": true,
+			"galleryMode": true,
+			"details": true,
+			"copyImage": true,
+			"saveImage": true
+		},
+		"zoomSettings": {
+			"lensSize": 5000,
+			"pixelMode": true,
+			"zoomLevel": 2
+		}
+	}
+}
