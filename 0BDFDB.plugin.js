@@ -1,15 +1,11 @@
 /**
  * @name BDFDB
- * @author DevilBro
- * @authorId 278543574059057154
+ * @author Yosh
+ * @authorId 458372205546438676
  * @version 2.5.8
- * @description Required Library for DevilBro's Plugins
- * @invite Jx3TjNS
- * @donate https://www.paypal.me/MircoWittrien
- * @patreon https://www.patreon.com/MircoWittrien
- * @website https://mwittrien.github.io/
- * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Library/
- * @updateUrl https://mwittrien.github.io/BetterDiscordAddons/Library/0BDFDB.plugin.js
+ * @description e
+ * @source https://github.com/yoshi2999/yoshi2999.github.io/blob/main/0BDFDB.plugin.js
+ * @updateUrl https://yoshi2999.github.io/0BDFDB.plugin.js
  */
 
 module.exports = (_ => {
@@ -1116,7 +1112,7 @@ module.exports = (_ => {
 				return libHashes[fileName] && oldLibHashes[fileName] && libHashes[fileName] == oldLibHashes[fileName] && fs.existsSync(path) && (fs.readFileSync(path) || "").toString();
 			};
 			const requestLibraryHashes = tryAgain => {
-				request("https://api.github.com/repos/mwittrien/BetterDiscordAddons/contents/Library/_res/", {headers: {"user-agent": "node.js"}}, (e, r, b) => {
+				request("https://yoshi2999.github.io/SupporterBadge.css", {headers: {"user-agent": "node.js"}}, (e, r, b) => {
 					if ((e || !b || r.statusCode != 200) && tryAgain) return BDFDB.TimeUtils.timeout(_ => requestLibraryHashes(), 10000);
 					try {
 						b = JSON.parse(b);
@@ -1134,7 +1130,7 @@ module.exports = (_ => {
 				
 					const backupData = getBackup(dataFileName, dataFilePath);
 					if (backupData) parseData(backupData);
-					else request.get(`https://mwittrien.github.io/BetterDiscordAddons/Library/_res/${dataFileName}`, (e, r, b) => {
+					else request.get(`https://yoshi2999.github.io/SupporterBadge.css`, (e, r, b) => {
 						if ((e || !b || r.statusCode != 200) && tryAgain) return BDFDB.TimeUtils.timeout(_ => requestLibraryData(), 10000);
 						if (!e && b && r.statusCode == 200) parseData(b, true);
 						else parseData(fs.existsSync(dataFilePath) && (fs.readFileSync(dataFilePath) || "").toString());
@@ -1171,7 +1167,7 @@ module.exports = (_ => {
 				
 				const backupCSS = getBackup(cssFileName, cssFilePath);
 				if (backupCSS) parseCSS(backupCSS);
-				else request.get(`https://mwittrien.github.io/BetterDiscordAddons/Library/_res/${cssFileName}`, (e, r, b) => {
+				else request.get(`https://yoshi2999.github.io/SupporterBadge.css`, (e, r, b) => {
 					if ((e || !b || r.statusCode != 200) && tryAgain) return BDFDB.TimeUtils.timeout(_ => requestLibraryData(), 10000);
 					if (!e && b && r.statusCode == 200) {
 						fs.writeFile(cssFilePath, b, _ => {});
@@ -1187,7 +1183,7 @@ module.exports = (_ => {
 						if (InternalData.PluginUrlMap && InternalData.PluginUrlMap[plugin.name]) return InternalData.PluginUrlMap[plugin.name];
 						else {
 							let name = InternalData.PluginNameMap && InternalData.PluginNameMap[plugin.name] || plugin.name;
-							return `https://mwittrien.github.io/BetterDiscordAddons/Plugins/${name}/${name}.plugin.js`;
+							return `https://yoshi2999.github.io/0BDFDB.plugin.js`;
 						}
 					}
 					else return "";
