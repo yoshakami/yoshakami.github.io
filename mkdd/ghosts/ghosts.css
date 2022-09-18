@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Delfino;
+    src: url("/Delfino.otf") format("opentype");
+}
+
+body {
+    overflow-x: hidden;
+    background: #303;
+    font-size: 0;
+    margin: 0;
+    font-family: Delfino;
+}
+.cup1, .cup2, .cup3, .cup4, .cup5, .cup6, .cup7, .cup8, .cupa, .cupb, .cupc, .cupd {
+    display: inline-block;
+}
+.section-mirror, .section-reverse {
+    left: 35vw;
+    position: relative;
+}
+.cups, .mirror-cups, .reverse-cups {
+    margin-top: 5vw;
+    border: 0.3vw red solid;
+}
+p {
+    overflow: hidden;
+    margin: 0;
+    font-family: Delfino;
+}
+img {
+    display: inline-block;
+    width: 24vw;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    img {
+        width: 50vw;
+        height: auto;
+    }
+}

@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Delfino;
+    src: url("/Delfino.otf") format("opentype");
+}
+
+body {
+    overflow: hidden;
+    background: #303;
+    font-size: 0;
+    margin: 0;
+    font-family: Delfino;
+}
+
+p {
+    overflow: hidden;
+    margin: 0;
+    font-family: Delfino;
+}
+img {
+    overflow: hidden;
+    display: inline-block;
+    width: 25vw;
+    height: 20vw;
+}
+
+.ghost, .bol, .editors, .ct {
+    position: absolute;
+    top: 15vw;
+    color: white;
+    font-size: 3vw;
+}
+
+.ghost {
+    left: 1vw;
+}
+
+.bol {
+    left: 31vw;
+}
+
+.editors {
+    left: 53vw;
+}
+
+.ct {
+    left: 77vw;
+}
+
+.block-1, .block-2, .block-3, .block-4 {
+    display: inline-block;
+}
+
+.span1 {
+    position: absolute;
+    top: 14.7vw;
+    background: linear-gradient(45deg, black, transparent);
+    width: 25vw;
+    height: 4vw;
+    left: 0;
+}
+
+.span2 {
+    position: absolute;
+    top: 14.7vw;
+    background: linear-gradient(45deg, black, transparent);
+    width: 25vw;
+    height: 4vw;
+    left: 25vw;
+}
+
+.span3 {
+    position: absolute;
+    top: 14.7vw;
+    background: linear-gradient(45deg, black, transparent);
+    width: 25vw;
+    height: 4vw;
+    left: 50vw;
+}
+
+.span4 {
+    position: absolute;
+    top: 14.7vw;
+    background: linear-gradient(45deg, black, transparent);
+    width: 25vw;
+    height: 4vw;
+    left: 75vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    img {
+        width: 50vw;
+        height: 40vw;
+    }
+    .ghost {
+        left: 5vw;
+        top: 30vw;
+        font-size: 5vw;
+    }
+    .bol {
+        left: 65vw;
+        top: 30vw;
+        font-size: 5vw;
+    }
+    .editors {
+        left: 4vw;
+        top: 70vw;
+        font-size: 5vw;
+    }
+    .ct {
+        left: 60vw;
+        top: 70vw;
+        font-size: 5vw;
+    }
+    .span1 {
+        top: 28vw;
+        width: 50vw;
+        height: 10vw;
+        left: 0;
+    }
+    .span2 {
+        top: 28vw;
+        width: 50vw;
+        height: 10vw;
+        left: 50vw;
+    }
+    .span3 {
+        top: 68vw;
+        width: 50vw;
+        height: 10vw;
+        left: 0;
+    }
+    .span4 {
+        top: 68vw;
+        width: 50vw;
+        height: 10vw;
+        left: 50vw;
+    }
+}
