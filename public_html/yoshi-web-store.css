@@ -64,15 +64,28 @@ img {
     background-color: #303;
 }
 
-.splash {
+.splash, .splash2, .splash3, .splash4 {
     z-index: 2;
-
-    position: fixed;
-    /*top: 14.7vw;*/
+    position: absolute;
     background: linear-gradient(45deg, black, transparent);
     width: 24.8vw;
     height: 4vw;
-    /*left: 0;*/
+}
+
+.splash {
+    top: 14.7vw;
+}
+
+.splash2 {
+    top: 34.7vw;
+}
+
+.splash3 {
+    top: 54.7vw;
+}
+
+.splash4 {
+    top: 74.7vw;
 }
 
 .logged, .login {
