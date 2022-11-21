@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Delfino;
+    src: url("/Delfino.otf") format("opentype");
+}
+
+body {
+    overflow: hidden;
+    background: #303;
+    font-size: 0;
+    margin: 0;
+    font-family: Delfino;
+}
+
+label, input {
+    overflow: hidden;
+    margin: 0;
+    font-family: Delfino;
+}
+.submit-button {
+    position: relative;
+    color: black;
+    font-family: Delfino;
+    font-size: 2vw;
+    top: 45vh;
+    left: 45vw;
+    padding: 0 1vw 0 1vw;
+    border-radius: 1vw;
+    border: 0.1vw solid black
+}
+.user-note {
+    display: inline-block;
+    top: 39.5vh;
+    left: 20vw;
+    position: relative;
+    font-family: Delfino;
+    margin: 0 0 0 1vw;
+    color: white;
+}
+.display-input, .user-input, .password-input {
+    position: relative;
+    color: black;
+    width: 40vw;
+
+}
+.display-name, .user-name, .password-name {
+    position: relative;
+    color: white;
+}
+.display-name, .display-input {
+    top: 40vh;
+    left: 20vw;
+    margin-right: 2vw;
+    margin-top: 1vw;
+}
+.user-name {
+    top: 40vh;
+    left: 20vw;
+    margin-top: 1vw;
+}
+.user-input {
+    margin-top: 1vw;
+    top: 40vh;
+    left: 20vw;
+}
+.password-name, .password-input {
+    top: 40vh;
+    left: 20vw;
+    margin-top: 1vw;
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    font-family: Delfino;
+}
+@media only screen and (min-width: 1000px) {
+    input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+        font-size: 2vw;
+    }
+    .user-note {
+        font-size: 1vw;
+    }
+    label, input {
+        font-size: 2vw;
+    }
+
+    .user-name {
+        margin-right: 4.5vw;
+    }
+    .password-name, .password-input {
+        margin-right: 5.5vw;
+    }
+}
+@media only screen and (max-width: 999px) {
+    input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+        font-size: 3vw;
+    }
+    .user-note {
+        font-size: 2vw;
+    }
+    label, input {
+        font-size: 3vw;
+    }
+    .user-name {
+        margin-right: 5.7vw;
+    }
+    .password-name, .password-input {
+        margin-right: 7.2vw;
+    }
+
+}

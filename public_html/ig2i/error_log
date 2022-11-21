@@ -1,0 +1,32 @@
+[20-Sep-2022 13:19:37 Europe/Paris] PHP Warning:  imagecreatefromjpeg(ressources/images/armand.jpeg): Failed to open stream: No such file or directory in /home1/yoshiwe1/public_html/ig2i/ex.php on line 275
+[20-Sep-2022 13:19:37 Europe/Paris] PHP Warning:  imagecreatefromjpeg(ressources/images/villa.jpeg): Failed to open stream: No such file or directory in /home1/yoshiwe1/public_html/ig2i/ex.php on line 283
+[20-Sep-2022 13:19:37 Europe/Paris] PHP Fatal error:  Uncaught TypeError: imagesx(): Argument #1 ($image) must be of type GdImage, bool given in /home1/yoshiwe1/public_html/ig2i/ex.php:291
+Stack trace:
+#0 /home1/yoshiwe1/public_html/ig2i/ex.php(291): imagesx(false)
+#1 /home1/yoshiwe1/public_html/ig2i/ex.php(457): incrustation('jpeg', 'ressources/imag...', 'jpeg', 'ressources/imag...', 200, 50, 50, 'armandVilla.jpe...')
+#2 {main}
+  thrown in /home1/yoshiwe1/public_html/ig2i/ex.php on line 291
+[20-Sep-2022 13:19:41 Europe/Paris] PHP Warning:  imagecreatefromjpeg(ressources/images/armand.jpeg): Failed to open stream: No such file or directory in /home1/yoshiwe1/public_html/ig2i/ex.php on line 275
+[20-Sep-2022 13:19:41 Europe/Paris] PHP Warning:  imagecreatefromjpeg(ressources/images/villa.jpeg): Failed to open stream: No such file or directory in /home1/yoshiwe1/public_html/ig2i/ex.php on line 283
+[20-Sep-2022 13:19:41 Europe/Paris] PHP Fatal error:  Uncaught TypeError: imagesx(): Argument #1 ($image) must be of type GdImage, bool given in /home1/yoshiwe1/public_html/ig2i/ex.php:291
+Stack trace:
+#0 /home1/yoshiwe1/public_html/ig2i/ex.php(291): imagesx(false)
+#1 /home1/yoshiwe1/public_html/ig2i/ex.php(457): incrustation('jpeg', 'ressources/imag...', 'jpeg', 'ressources/imag...', 200, 50, 50, 'armandVilla.jpe...')
+#2 {main}
+  thrown in /home1/yoshiwe1/public_html/ig2i/ex.php on line 291
+[20-Sep-2022 13:19:42 Europe/Paris] PHP Warning:  imagecreatefromjpeg(ressources/images/armand.jpeg): Failed to open stream: No such file or directory in /home1/yoshiwe1/public_html/ig2i/ex.php on line 275
+[20-Sep-2022 13:19:42 Europe/Paris] PHP Warning:  imagecreatefromjpeg(ressources/images/villa.jpeg): Failed to open stream: No such file or directory in /home1/yoshiwe1/public_html/ig2i/ex.php on line 283
+[20-Sep-2022 13:19:42 Europe/Paris] PHP Fatal error:  Uncaught TypeError: imagesx(): Argument #1 ($image) must be of type GdImage, bool given in /home1/yoshiwe1/public_html/ig2i/ex.php:291
+Stack trace:
+#0 /home1/yoshiwe1/public_html/ig2i/ex.php(291): imagesx(false)
+#1 /home1/yoshiwe1/public_html/ig2i/ex.php(457): incrustation('jpeg', 'ressources/imag...', 'jpeg', 'ressources/imag...', 200, 50, 50, 'armandVilla.jpe...')
+#2 {main}
+  thrown in /home1/yoshiwe1/public_html/ig2i/ex.php on line 291
+[20-Sep-2022 13:21:54 Europe/Paris] PHP Warning:  imagecreatefromjpeg(ressources/images/armand.jpeg): Failed to open stream: No such file or directory in /home1/yoshiwe1/public_html/ig2i/ex.php on line 275
+[20-Sep-2022 13:21:54 Europe/Paris] PHP Warning:  imagecreatefromjpeg(ressources/images/villa.jpeg): Failed to open stream: No such file or directory in /home1/yoshiwe1/public_html/ig2i/ex.php on line 283
+[20-Sep-2022 13:21:54 Europe/Paris] PHP Fatal error:  Uncaught TypeError: imagesx(): Argument #1 ($image) must be of type GdImage, bool given in /home1/yoshiwe1/public_html/ig2i/ex.php:291
+Stack trace:
+#0 /home1/yoshiwe1/public_html/ig2i/ex.php(291): imagesx(false)
+#1 /home1/yoshiwe1/public_html/ig2i/ex.php(457): incrustation('jpeg', 'ressources/imag...', 'jpeg', 'ressources/imag...', 200, 50, 50, 'armandVilla.jpe...')
+#2 {main}
+  thrown in /home1/yoshiwe1/public_html/ig2i/ex.php on line 291

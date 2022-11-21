@@ -3,113 +3,116 @@
 <head>
     <title>Yoshi's web storage</title>
     <link rel="stylesheet" href="yoshi-web-store.css">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="utf-8">
+    <script src="yoshi-web-store.js"></script>
 </head>
-
+<script>
+    let protocol = getCookie("protocol");
+    if (protocol !== "") {
+        document.getElementById("footer-protocol").style.display = "none";
+        if (window.location.protocol === "http:" && getCookie("protocol") === "https") {
+            window.location.protocol = "https:";
+        }
+        if (window.location.protocol === "https:" && getCookie("protocol") === "http") {
+            window.location.protocol = "http:";
+        }
+    }</script>
 <body>
 <footer id="footer-protocol">
     <p class="https-available-text">this website is also available on https!</p>
     <button class="https-button" onclick="use_https()">use https ✅</button>
     <button class="http-button" onclick="use_http()">use http (insecure) ❌</button>
 </footer>
-<script type="text/javascript">
-    if (window.location.pathname === "/index.html")
-    {
-        window.location.href = "";
-    }
-    let protocol = getCookie("protocol");
-    if (protocol !== "")
-    {
-        document.getElementById("footer-protocol").style.display = "none";
-        if (window.location.protocol === "http:" && getCookie("protocol") === "https")
-        {
-            window.location.protocol = "https:";
-        }
-        if (window.location.protocol === "https:" && getCookie("protocol") === "http")
-        {
-            window.location.protocol = "http:";
-        }
-    }
-    function getCookie(cname) {
-        let name = cname + "=";
-        let decodedCookie = decodeURIComponent(document.cookie);
-        let ca = decodedCookie.split(';');
-        for(let i = 0; i <ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) === ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) === 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
-    function use_https() {
-        document.cookie = "protocol=https;expires=Fri, 18 Dec 2099 12:00:00 UTC";
-        document.getElementById("footer-protocol").style.display = "none";
-        if (window.location.protocol === "http:")
-        {
-            window.location.protocol = "https:";
-        }
-    }
-    function use_http() {
-        document.cookie = "protocol=http;expires=Fri, 18 Dec 2099 12:00:00 UTC";
-        document.getElementById("footer-protocol").style.display = "none";
-        if (window.location.protocol === "https:")
-        {
-            window.location.protocol = "http:";
-        }
-    }
-</script>
-<div class="row">
-    <div class="block-1">
-        <a href="/mkdd">
-            <img alt="mkdd" importance="auto" loading="auto" src="mkdd/Wallpaper/preview/title2.png">
-            <span class="span1"></span>
+<div class="menu">
+    <span class="splash"></span>
+    <span class="splash"></span>
+    <span class="splash"></span>
+    <span class="splash"></span>
+    <div class="block">
+        <a href="mkdd">
+            <img class="img😊menu" alt="mkdd" src="mkdd/Wallpaper/preview/small.jpg">
             <p class="mkdd">mkdd</p>
         </a>
     </div>
-    <div class="block-2">
-        <a href="/msm">
-            <img alt="msm" importance="auto" loading="auto" src="msm/Wallpaper/bigg-msm3.png">
-            <span class="span2"></span>
+    <div class="block">
+        <a href="msm">
+            <img class="img😊menu" alt="msm" src="msm/msm.jpg">
             <p class="msm">msm</p>
         </a>
     </div>
-    <div class="block-3">
-        <a href="/Wallpaper">
-            <img alt="Wallpaper" importance="auto" loading="auto" src="Wallpaper/gigachad.jpeg">
-            <span class="span3"></span>
-            <p class="wallpaper">Wallpaper</p>
+    <div class="block">
+        <a href="upload">
+            <img class="img😊menu" alt="upload" src="upload/$(.jpg">
+            <p class="upload">upload</p>
         </a>
     </div>
-    <div class="block-4">
-        <a href="/スプラトゥーン">
-            <img alt="スプラトゥーン" importance="auto" loading="auto" src="Wallpaper/Splatoon.jpg">
-            <span class="span4"></span>
+    <div class="block">
+        <a href="uploaded">
+            <img class="img😊menu" alt="Files" src="Wallpaper/Splatoon.jpg">
+            <p class="uploaded">uploaded</p>
+        </a>
+    </div>
+    <div class="block">
+        <a href="tennis">
+            <img class="img😊menu" alt="tennis" src="tennis/balle.jpg">
+            <span class="splash"></span>
+            <p class="tennis">tennis</p>
+        </a>
+    </div>
+    <div class="block">
+        <a href="Switch">
+            <img class="img😊menu" alt="Switch" src="Switch/Dakku-Anyway.jpg">
+            <span class="splash"></span>
+            <p class="Switch">Switch</p>
+        </a>
+    </div>
+    <div class="block">
+        <a href="スプラトゥーン">
+            <img class="img😊menu" alt="スプラトゥーン" src="Wallpaper/Splatoon.jpg">
+            <span class="splash"></span>
             <p class="splatoon">スプラトゥーン</p>
         </a>
     </div>
-    <div class="block-5">
-        <a href="/login">
-            <img alt="login" importance="auto" loading="auto" src="Wallpaper/Splatoon.jpg">
-            <span class="span5"></span>
+    <div class="block">
+        <a href="girls">
+            <img class="img😊menu" alt="LAM" src="girls/LAM.jpg">
+            <span class="splash"></span>
+            <p class="girls">girls</p>
+        </a>
+    </div>
+    <div class="block">
+        <a href="prediction">
+            <img class="img😊menu" id="prediction" alt="login" src="prediction/ressources/icon.svg">
+            <span class="splash"></span>
+            <p class="prediction">prediction</p>
+        </a>
+    </div>
+    <div class="block">
+        <a href="Wallpaper">
+            <img class="img😊menu" alt="Wallpaper" src="Wallpaper/gigachad.jpeg">
+            <span class="splash"></span>
+            <p class="wallpaper">Wallpaper</p>
+        </a>
+    </div>
+    <div class="block login">
+        <a href="login">
+            <img class="img😊menu" alt="login" importance="auto" loading="auto" src="Wallpaper/Splatoon.jpg">
+            <span class="splash login"></span>
             <p class="login">Log in</p>
         </a>
     </div>
-    <div class="block-5-logged">
-        <a href="/logout">
-            <img alt="logout" importance="auto" loading="auto" src="Wallpaper/Splatoon.jpg">
-            <span class="span5-logged"></span>
+    <div class="block logged">
+        <a href="logout">
+            <img class="img😊menu" alt="logout" importance="auto" loading="auto" src="Wallpaper/Splatoon.jpg">
+            <span class="splash login"></span>
             <p class="logout">Log out</p>
         </a>
     </div>
-    <div class="block-6-logged">
-        <a href="/me">
+    <div class="block logged">
+        <a href="me">
             <img alt="My Account" importance="auto" loading="auto" src="Wallpaper/Splatoon.jpg">
-            <span class="span6-logged"></span>
+            <span class="splash logged"></span>
             <p class="my-account">My Account</p>
         </a>
     </div>
