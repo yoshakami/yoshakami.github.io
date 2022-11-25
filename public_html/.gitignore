@@ -1,1 +1,7 @@
-- ./uploaded/*
+.idea/*
+.vs/*
+*/bin/*
+*/obj/*
+*.cache
+*.vsidx
+*/uploaded/*
