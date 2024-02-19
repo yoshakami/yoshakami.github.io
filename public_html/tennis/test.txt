@@ -1,8 +1,0 @@
-fonction changerPlace(pseudo, place){
-    if(place == undefined){
-        //Si le pseudo n'est pas dans le classement, on l'ajoute
-        //Si le pseudo est dans le classement, on fait rien
-    }else{
-        //On met le pseudo à la place indiquée et on décale
-    }
-}

@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <title>Yoshi's web storage</title>
-    <link rel="stylesheet" href="yoshi-web-store.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="utf-8">
-    <script src="yoshi-web-store.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="footer.css">
 </head>
 <script>
     let protocol = getCookie("protocol");
@@ -19,103 +20,90 @@
         }
     }</script>
 <body>
+<div class="flex">
+    <div class="relative">
+        <a href="mkdd">
+            <span>mkdd</span>
+            <img alt="mkdd" src="mkdd/Wallpaper/preview/small.jpg">
+        </a>
+    </div>
+    <div class="relative">
+        <a href="msm">
+            <span>msm</span>
+            <img alt="msm" src="msm/msm.jpg">
+        </a>
+    </div>
+    <div class="relative">
+        <a href="upload">
+            <span>upload</span>
+            <img alt="upload" src="upload/$(.jpg">
+        </a>
+    </div>
+    <div class="relative">
+        <a href="uploaded">
+            <span>uploaded</span>
+            <img alt="Files" src="Wallpaper/Splatoon.jpg">
+        </a>
+    </div>
+    <div class="relative">
+        <a href="tennis">
+            <span >tennis</span>
+            <img alt="tennis" src="tennis/balle.jpg">
+        </a>
+    </div>
+    <div class="relative">
+        <a href="Switch">
+            <span >Switch</span>
+            <img alt="Switch" src="Switch/Dakku-Anyway.jpg">
+        </a>
+    </div>
+    <div class="relative">
+        <a href="スプラトゥーン">
+            <span >スプラトゥーン</span>
+            <img alt="スプラトゥーン" src="Wallpaper/Splatoon.jpg">
+        </a>
+    </div>
+    <div class="relative">
+        <a href="girls">
+            <span>girls</span>
+            <img alt="LAM" src="girls/LAM.jpg">
+        </a>
+    </div>
+    <div class="relative">
+        <a href="prediction">
+            <span>prediction</span>
+            <img id="prediction" alt="login" src="prediction/ressources/icon.svg">
+        </a>
+    </div>
+    <div class="relative">
+        <a href="Wallpaper">
+            <span>Wallpaper</span>
+            <img alt="Wallpaper" src="Wallpaper/gigachad.jpeg">
+        </a>
+    </div>
+    <div class="relative login">
+        <a href="login">
+            <span>Log in</span>
+            <img alt="login" src="Wallpaper/Splatoon.jpg">
+        </a>
+    </div>
+    <div class="relative logged">
+        <a href="logout">
+            <span>Log out</span>
+            <img alt="logout" src="Wallpaper/Splatoon.jpg">
+        </a>
+    </div>
+    <div class="relative logged">
+        <a href="me">
+            <span>My Account</span>
+            <img alt="My Account" src="Wallpaper/Splatoon.jpg">
+        </a>
+    </div>
+</div>
 <footer id="footer-protocol">
     <p class="https-available-text">this website is also available on https!</p>
     <button class="https-button" onclick="use_https()">use https ✅</button>
     <button class="http-button" onclick="use_http()">use http (insecure) ❌</button>
 </footer>
-<div class="menu">
-    <div class="block">
-        <a href="mkdd">
-            <span class="splash"></span>
-            <img class="img😊menu" alt="mkdd" src="mkdd/Wallpaper/preview/small.jpg">
-            <p class="mkdd">mkdd</p>
-        </a>
-    </div>
-    <div class="block">
-        <a href="msm">
-            <span class="splash"></span>
-            <img class="img😊menu" alt="msm" src="msm/msm.jpg">
-            <p class="msm">msm</p>
-        </a>
-    </div>
-    <div class="block">
-        <a href="upload">
-            <span class="splash"></span>
-            <img class="img😊menu" alt="upload" src="upload/$(.jpg">
-            <p class="upload">upload</p>
-        </a>
-    </div>
-    <div class="block">
-        <a href="uploaded">
-            <span class="splash"></span>
-            <img class="img😊menu" alt="Files" src="Wallpaper/Splatoon.jpg">
-            <p class="uploaded">uploaded</p>
-        </a>
-    </div>
-    <div class="block">
-        <a href="tennis">
-            <span class="splash2"></span>
-            <img class="img😊menu" alt="tennis" src="tennis/balle.jpg">
-            <p class="tennis">tennis</p>
-        </a>
-    </div>
-    <div class="block">
-        <a href="Switch">
-            <span class="splash2"></span>
-            <img class="img😊menu" alt="Switch" src="Switch/Dakku-Anyway.jpg">
-            <p class="Switch">Switch</p>
-        </a>
-    </div>
-    <div class="block">
-        <a href="スプラトゥーン">
-            <span class="splash2"></span>
-            <img class="img😊menu" alt="スプラトゥーン" src="Wallpaper/Splatoon.jpg">
-            <p class="splatoon">スプラトゥーン</p>
-        </a>
-    </div>
-    <div class="block">
-        <a href="girls">
-            <span class="splash2"></span>
-            <img class="img😊menu" alt="LAM" src="girls/LAM.jpg">
-            <p class="girls">girls</p>
-        </a>
-    </div>
-    <div class="block">
-        <a href="prediction">
-            <span class="splash3"></span>
-            <img class="img😊menu" id="prediction" alt="login" src="prediction/ressources/icon.svg">
-            <p class="prediction">prediction</p>
-        </a>
-    </div>
-    <div class="block">
-        <a href="Wallpaper">
-            <span class="splash3"></span>
-            <img class="img😊menu" alt="Wallpaper" src="Wallpaper/gigachad.jpeg">
-            <p class="wallpaper">Wallpaper</p>
-        </a>
-    </div>
-    <div class="block login">
-        <a href="login">
-            <span class="splash3 login"></span>
-            <img class="img😊menu" alt="login" importance="auto" loading="auto" src="Wallpaper/Splatoon.jpg">
-            <p class="login">Log in</p>
-        </a>
-    </div>
-    <div class="block logged">
-        <a href="logout">
-            <span class="splash3 login"></span>
-            <img class="img😊menu" alt="logout" importance="auto" loading="auto" src="Wallpaper/Splatoon.jpg">
-            <p class="logout">Log out</p>
-        </a>
-    </div>
-    <div class="block logged">
-        <a href="me">
-            <span class="splash4 logged"></span>
-            <img alt="My Account" importance="auto" loading="auto" src="Wallpaper/Splatoon.jpg">
-            <p class="my-account">My Account</p>
-        </a>
-    </div>
-</div>
 </body>
 </html>
