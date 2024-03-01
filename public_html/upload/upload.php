@@ -4,9 +4,9 @@
 <body>
   
 <?php
-//$target_file = "../uploaded/" . basename($_FILES["fileToUpload"]["name"]);
+$target_file = "../uploaded/" . basename($_FILES["fileToUpload"]["name"]);
 print_r($_POST);
-//print_r($target_file);
+print_r($target_file);
 print_r($_FILES);
 if(isset($_POST["submit"]))
 {
